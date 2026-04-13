@@ -121,7 +121,7 @@ def get_unit_info(unit_full_name):
 def init_gemini(api_key):
     """Gemini API 초기화"""
     genai.configure(api_key=api_key)
-    return genai.GenerativeModel("gemini-2.5-flash-preview-05-20")
+    return genai.GenerativeModel("gemini-2.5-flash")
 
 def analyze_and_generate_similar(model, image, unit_info_list):
     """이미지 분석 후 유사 문항 2개 생성"""
